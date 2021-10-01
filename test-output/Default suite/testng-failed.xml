@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="pagesTestCasesYasasiiWeb.LoginTestcasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="userlogin"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.LoginTestcasesYW -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

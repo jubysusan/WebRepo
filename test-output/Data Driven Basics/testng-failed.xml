@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Basics]">
+  <listeners>
+    <listener class-name="com.listenersYasasiiWeb.CustomListenerYasasiiWeb"/>
+  </listeners>
+  <test thread-count="5" name="YasasiiSprints(failed)">
+    <classes>
+      <class name="pagesTestCasesYasasiiWeb.MastersServiceTestCasesYW">
+        <methods>
+          <include name="logout"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="addservice"/>
+          <include name="navigateMasterServicePage"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersServiceTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.ERPatientTestCasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="navigateERPage"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="addERReg"/>
+          <include name="extentReportEnd"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.ERPatientTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMRADTTestCasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="EMRADT"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="navigateemradt"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMRADTTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersSpecimenTestCasesYW">
+        <methods>
+          <include name="addspecimn"/>
+          <include name="setup"/>
+          <include name="logout"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="navigateMasterSpecimenPage"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersSpecimenTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMROPNoteTestCaseYW">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="cpoeadmin"/>
+          <include name="logout"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="navigateOPfullPage"/>
+          <include name="OPEMR"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMROPNoteTestCaseYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersResourceCategoryTestCasesYW">
+        <methods>
+          <include name="navigateDO"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="Schedulesettings"/>
+          <include name="teardown"/>
+          <include name="logout"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersResourceCategoryTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMRJuniorSeniorDoctorVerificationTestCasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="navigateemradt"/>
+          <include name="startTest"/>
+          <include name="NurseNote"/>
+          <include name="logout"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMRJuniorSeniorDoctorVerificationTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersDisplayOrderTestCasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="logout"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="displayorder"/>
+          <include name="navigateDO"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersDisplayOrderTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersRecommendDoseYW">
+        <methods>
+          <include name="logout"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="servicemaster"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="navigateERPage"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersRecommendDoseYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMRHomePageYW">
+        <methods>
+          <include name="EMRscreen"/>
+          <include name="setup"/>
+          <include name="logout"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="navigateEMRPage"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMRHomePageYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersGenericTestCasesYW">
+        <methods>
+          <include name="logout"/>
+          <include name="addgenericmaster"/>
+          <include name="navigateMSPage"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersGenericTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.IVSampleCollectionTestCases">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="addSampleDespatch"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="addSampleCollection"/>
+          <include name="addSampleProcessing"/>
+          <include name="extentReportEnd"/>
+          <include name="logout"/>
+          <include name="navigateFOPage"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.IVSampleCollectionTestCases -->
+      <class name="pagesTestCasesYasasiiWeb.FORegTestCasesYW">
+        <methods>
+          <include name="logout"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="navigateFOPage"/>
+          <include name="extentReportEnd"/>
+          <include name="addFOReg" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.FORegTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.MastersMedicineTestCasesYW">
+        <methods>
+          <include name="logout"/>
+          <include name="addmedicinecmaster"/>
+          <include name="setup"/>
+          <include name="navigateMIPage"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersMedicineTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMRIPDischargeTestCasesYW">
+        <methods>
+          <include name="navigateDO"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="logout"/>
+          <include name="Schedulesettings"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMRIPDischargeTestCasesYW -->
+      <class name="pagesTestCasesYasasiiWeb.EMRNurseNotTestCasesYasasiiWeb">
+        <methods>
+          <include name="logout"/>
+          <include name="navigateemradt"/>
+          <include name="setup"/>
+          <include name="NurseNote"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.EMRNurseNotTestCasesYasasiiWeb -->
+      <class name="pagesTestCasesYasasiiWeb.MastersContainerTestCasesYW">
+        <methods>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="logout"/>
+          <include name="teardown"/>
+          <include name="getTestMethodProperties"/>
+          <include name="extentReportEnd"/>
+          <include name="navigateMasterContainerPage"/>
+          <include name="addcontainer"/>
+        </methods>
+      </class> <!-- pagesTestCasesYasasiiWeb.MastersContainerTestCasesYW -->
+    </classes>
+  </test> <!-- YasasiiSprints(failed) -->
+</suite> <!-- Failed suite [Data Driven Basics] -->
