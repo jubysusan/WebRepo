@@ -30,13 +30,19 @@
        <class name="pagesTestCasesYasasiiWeb.MastersSpecimenTestCasesYW"/> 
        <class name="pagesTestCasesYasasiiWeb.MastersDisplayOrderTestCasesYW"/> 
         <class name="pagesTestCasesYasasiiWeb.MastersResourceCategoryTestCasesYW"/>
-         <class name="pagesTestCasesYasasiiWeb.IVSampleCollectionTestCases"/>  
+         <class name="pagesTestCasesYasasiiWeb.IVSampleCollectionTestCases"/> 
+          <class name="pagesTestCasesYasasiiWeb.MastersResourceMappingTestCasesYW"/>
+          
       <class name="pagesTestCasesYasasiiWeb.EMRJuniorSeniorDoctorVerificationTestCasesYW"/>
-<!--         <class name="pagesTestCasesYasasiiWeb.MastersResourceMappingTestCasesYW"/>   -->
-<!--         <class name="pagesTestCasesYasasiiWeb.IVSampleCollectionTestCases"/>   -->
-
- <class name="pagesTestCasesYasasiiWeb.EMRNurseNotTestCasesYasasiiWeb"/>
-  <class name="pagesTestCasesYasasiiWeb.EMROPNoteTestCaseYW"/>
+        <class name="pagesTestCasesYasasiiWeb.EMRBirthRegistrationTestCasesYW"/>  
+        <class name="pagesTestCasesYasasiiWeb.EMR_BirthRegTwoChildTestCaseYW"/>  
+        <class name="pagesTestCasesYasasiiWeb.FOEMRFollowUpNoteTestcaseYW"/> 
+<class name="pagesTestCasesYasasiiWeb. EMR_ERBedAllocationTestCaseYW"/>
+  <class name="pagesTestCasesYasasiiWeb.EMROPNoteTestCaseYW"/> 
+  <class name="pagesTestCasesYasasiiWeb.EMRDietNoteTestCasesYW"/>
+   <class name="pagesTestCasesYasasiiWeb.EMRNurseNoteTestCasesYasasiiWeb"/>
+  
+  
     </classes>
     
   </test> <!-- Test -->

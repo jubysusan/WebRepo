@@ -248,17 +248,128 @@ public class EMRBirthRegistrationYasasiiWeb extends PageFactoryInitYasasiiWeb{
 	public WebElement SelectBEd;
 	@FindBy(xpath = "//input[@id='bednumber']")
 	public WebElement BEDno;
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-fo-landing[1]/div[2]/app-patient-view[1]/form[1]/div[2]/app-adt[1]/div[1]/div[4]/div[1]/form[1]/div[2]/div[1]/app-adt-beddetails[1]/form[1]/div[1]/div[3]/ul[1]/app-list-item[6]/li[1]")
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-fo-landing[1]/div[2]/app-patient-view[1]/form[1]/div[2]/app-adt[1]/div[1]/div[4]/div[1]/form[1]/div[2]/div[1]/app-adt-beddetails[1]/form[1]/div[1]/div[3]/ul[1]/app-list-item[1]")
 	public WebElement SelectBEDno;
 	@FindBy(xpath = "//button[@id='savepatadtbutton']")
 	public WebElement SAVE;
 	
+	@FindBy(xpath = "//header/nav[1]/div[2]/ul[1]/li[1]/a[1]/label[1]/div[1]/div[1]")
+	public WebElement Menu;
+	@FindBy(xpath = "//label[contains(text(),'Modules')]")
+	public WebElement MODules;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-asideleftbar[1]/aside[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/i[1]")
+	public WebElement EMR1;
+	@FindBy(xpath = "//body[1]/app-root[1]/app-layout[1]/main[1]/app-asideleftbar[1]/aside[1]/div[1]/div[2]/ul[1]/li[1]/a[1]/span[1]")
+	public WebElement EMRHomeScreen1;
+	@FindBy(xpath = "//input[@id='maincategory']")
+	public WebElement Dropdown;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[1]/lib-patientlist[1]/form[1]/div[3]/div[1]/div[1]/ul[1]/app-list-item[3]/li[1]")
+	public WebElement IP;
+	@FindBy(xpath = "//input[@id='subcategory']")
+	public WebElement NextDropdown;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[1]/lib-patientlist[1]/form[1]/div[3]/div[1]/div[2]/ul[1]/app-list-item[2]/li[1]")
+	public WebElement MyDeptIP;
+	@FindBy(xpath = "//input[@id='searchtext']")
+	public WebElement EnterPatientName1;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[1]/lib-patientlist[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/span[2]/i[1]")
+	public WebElement SelectBaby;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/label[1]/i[1]")
+	public WebElement UpArrow1;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/label[1]/i[1]")
+	public WebElement Lock;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[3]/div[1]/app-emr-dashboard[1]/div[1]/label[2]/span[1]")
+	public WebElement DoctorNote1;
+	@FindBy(xpath = "//input[@id='chiefcomplainttext']")
+	public WebElement EnterChiefComplaint1;
+	@FindBy(xpath = "//input[@id='emrtemplateid']")
+	public WebElement EnterTemplate1;
+	@FindBy(xpath = "//li[contains(text(),'SOAP')]")
+	public WebElement SelectTemplate1;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[3]/div[1]/div[1]/div[1]/div[2]/button[1]")
+	public WebElement ClickOk1;
+	
+	@FindBy(xpath = "//div[contains(text(),'Child Development Chart')]")
+	public WebElement ChildDevelopmentChart;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[1]/div[1]/div[2]/div[2]/div[6]/div[1]/app-childmilestone[1]/div[1]/fusioncharts[1]/div[1]/span[1]/*[name()='svg'][1]/*[name()='g'][1]/*[name()='g'][11]/*[name()='g'][9]/*[name()='g'][2]/*[name()='rect'][1]")
+	public WebElement SocialSmile;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk2;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[1]/div[1]/div[2]/div[2]/div[6]/div[1]/app-childmilestone[1]/div[1]/fusioncharts[1]/div[1]/span[1]/*[name()='svg'][1]/*[name()='g'][1]/*[name()='g'][11]/*[name()='g'][9]/*[name()='g'][2]/*[name()='rect'][2]")
+	public WebElement EyesFollow;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk3;
+	
+	/*@FindBy(xpath = "//*[name()='g' and contains(@class,'raphael-gr')]//*[name()='g' and contains(@class,'raphael-gr')]//*[name()='g' and contains(@class,'raphael-gr')]//*[name()='g' and contains(@class,'raphael-gr')]//*[name()='rect' and contains(@width,'54')]")
+	public WebElement TransferObj;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk4;*/
+	
+
+	@FindBy(xpath = "//div[contains(text(),'Child Language Evaluation Chart')]")
+	public WebElement ChildLangEval;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[1]/div[1]/div[2]/div[2]/div[7]/div[1]/app-childlanguageevaluationchart[1]/div[1]/fusioncharts[1]/div[1]/span[1]/*[name()='svg'][1]/*[name()='g'][1]/*[name()='g'][11]/*[name()='g'][9]/*[name()='g'][2]/*[name()='rect'][1]")
+	public WebElement RespondsToBell;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk5;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[1]/div[1]/div[2]/div[2]/div[7]/div[1]/app-childlanguageevaluationchart[1]/div[1]/fusioncharts[1]/div[1]/span[1]/*[name()='svg'][1]/*[name()='g'][1]/*[name()='g'][11]/*[name()='g'][9]/*[name()='g'][2]/*[name()='rect'][2]")
+	public WebElement RespondsToSmile;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk6;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[1]/div[1]/div[2]/div[2]/div[7]/div[1]/app-childlanguageevaluationchart[1]/div[1]/fusioncharts[1]/div[1]/span[1]/*[name()='svg'][1]/*[name()='g'][1]/*[name()='g'][11]/*[name()='g'][9]/*[name()='g'][2]/*[name()='rect'][7]")
+	public WebElement ListensWhenSpoken;
+	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
+	public WebElement ClickOk7;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[3]/div[1]/app-emr-dashboard[1]/div[1]/label[10]/span[1]")
+	public WebElement SelectSave1;
 	
 	
+	@FindBy(xpath = "//header/nav[1]/div[2]/ul[1]/li[1]/a[1]/label[1]/div[1]")
+	public WebElement mentogle1;
+	@FindBy(xpath = "//label[contains(text(),'Modules')]")
+	public WebElement modles1;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-asideleftbar[1]/aside[1]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/i[1]")
+	public WebElement fomod1;
+	@FindBy(xpath = "//body[1]/app-root[1]/app-layout[1]/main[1]/app-asideleftbar[1]/aside[1]/div[1]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]/span[1]")
+	public WebElement registran1;
+	@FindBy(xpath = "//input[@id='maincategory']")
+	public WebElement FoMenu1;
+	@FindBy(xpath = "//li[contains(text(),'IP')]")
+	public WebElement FoDropdown;
+	@FindBy(xpath = "//input[@id='searchtext']")
+	public WebElement Search2;
+	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-fo-landing[1]/div[1]/lib-patientlist[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/span[2]/i[1]")
+	public WebElement SelectBaby1;
+	@FindBy(xpath = "//input[@id='dischargestatus']")
+	public WebElement Dischargestat;
+	@FindBy(xpath = "//li[normalize-space()='Patient Requested']")
+	public WebElement SelectDischargestat;
+	@FindBy(xpath = "//input[@id='disposition']")
+	public WebElement Disposition;
+	@FindBy(xpath = "//li[normalize-space()='Discharged Home']")
+	public WebElement SelectDisposition;
+	@FindBy(xpath = "//button[normalize-space()='Save']")
+	public WebElement DischargeSave;
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/app-layout[1]/main[1]/app-fo-landing[1]/div[1]/lib-patientlist[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]")
+	public WebElement Selectpatient2;
+	@FindBy(xpath = "//input[@id='dischargestatus']")
+	public WebElement Dischargestat1;
+	@FindBy(xpath = "//li[normalize-space()='Patient Requested']")
+	public WebElement SelectDischargestat1;
+	@FindBy(xpath = "//input[@id='disposition']")
+	public WebElement Disposition1;
+	@FindBy(xpath = "//li[normalize-space()='Discharged Home']")
+	public WebElement SelectDisposition1;
+	@FindBy(xpath = "//button[normalize-space()='Save']")
+	public WebElement DischargeSave1;
+	
+	
+	
+	
+	
 
-
-
-
+	
+	
+	
 public void enterFOpatientBirthRegistrationSelectn(String Name,String AadharNumber) throws InterruptedException, IOException {
 	
     Thread.sleep(1000);
@@ -360,7 +471,7 @@ public void enterFOpatientBirthRegistrationSelectn(String Name,String AadharNumb
 	arrw.click();
 	Thread.sleep(600);
 	sAVe.click();
-	Thread.sleep(1000);
+	Thread.sleep(10000);
 	arw.click();
 	Thread.sleep(600);
 	doctrnote.click();
@@ -424,13 +535,123 @@ public void enterFOpatientBirthRegistrationSelectn(String Name,String AadharNumb
 		}
 	Roomcatgry.click();
 	Selectcategry.click();
+    Thread.sleep(500);
 	BEd.click();
+	Thread.sleep(800);
 	SelectBEd.click();
+	Thread.sleep(1000);
 	BEDno.click();
+	Thread.sleep(5000);
 	SelectBEDno.click();
-	Thread.sleep(500);
+	Thread.sleep(1000);
 	SAVE.click();
+	Thread.sleep(10000);
+	
+	
+	Menu.click();
+	Thread.sleep(5000);
+	MODules.click();
+	Thread.sleep(1000);
+	EMR1.click();
+	Thread.sleep(1000);
+	EMRHomeScreen1.click();
+	Thread.sleep(1000);
+	Dropdown.click();
+	Thread.sleep(5000);
+	IP.click();
+	Thread.sleep(1000);
+	NextDropdown.click();
+	Thread.sleep(1000);
+	MyDeptIP.click();
+	Thread.sleep(1000);
+	EnterPatientName1.sendKeys(Name);
+	Thread.sleep(1000);
+	SelectBaby.click();
+	Thread.sleep(1000);
+	UpArrow1.click();
+	Thread.sleep(1000);
+	Lock.click();
+	Thread.sleep(1000);
+	DoctorNote1.click();
 	Thread.sleep(500);
+	EnterChiefComplaint1.sendKeys("New Born Yellow");
+	Thread.sleep(600);
+	EnterTemplate1.click();
+	Thread.sleep(1000);
+	SelectTemplate1.click();
+	Thread.sleep(1000);
+	ClickOk1.click();
+	Thread.sleep(500);
+	
+	ChildDevelopmentChart.click();
+	Thread.sleep(5000);
+    SocialSmile.click();
+    Thread.sleep(1000);
+	ClickOk2.click();
+	Thread.sleep(1000);
+	EyesFollow.click();
+	Thread.sleep(1000);
+    ClickOk3.click();
+	Thread.sleep(1000);
+	/*TransferObj.click();
+	Thread.sleep(1000);
+    ClickOk4.click();
+	Thread.sleep(1000);*/
+	
+
+	ChildLangEval.click();
+	Thread.sleep(1000);
+    RespondsToBell.click();
+	Thread.sleep(1000);
+	ClickOk5.click();
+	Thread.sleep(1000);
+	RespondsToSmile.click();
+	Thread.sleep(1000);
+    ClickOk6.click();
+	Thread.sleep(1000);
+	ListensWhenSpoken.click();
+	Thread.sleep(1000);
+    ClickOk7.click();
+	Thread.sleep(1000);
+	SelectSave1.click();
+	Thread.sleep(8000);
+	
+	mentogle1.click();
+	modles1.click();
+	Thread.sleep(5000);
+	fomod1.click();
+	registran1.click();
+	Thread.sleep(500);
+	FoMenu1.click();
+	Thread.sleep(1000);
+	FoDropdown.click();
+	Thread.sleep(1000);
+	Search2.sendKeys(Name);
+	Thread.sleep(1000);
+	SelectBaby1.click();
+	Thread.sleep(1000);
+	Dischargestat.click();
+	Thread.sleep(1000);
+	SelectDischargestat.click();
+	Thread.sleep(1000);
+	Disposition.click();
+	Thread.sleep(1000);
+	SelectDisposition.click();
+	Thread.sleep(1000);
+	DischargeSave.click();
+	Thread.sleep(1000);
+	Selectpatient2.click();
+	Thread.sleep(500);
+	Dischargestat1.click();
+	Thread.sleep(1000);
+	SelectDischargestat1.click();
+	Thread.sleep(1000);
+	Disposition1.click();
+	Thread.sleep(1000);
+	SelectDisposition1.click();
+	Thread.sleep(1000);
+	DischargeSave1.click();
+	Thread.sleep(1000);
 	
 	
 }

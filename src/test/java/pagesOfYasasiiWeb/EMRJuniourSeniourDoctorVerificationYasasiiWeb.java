@@ -48,6 +48,7 @@ public class EMRJuniourSeniourDoctorVerificationYasasiiWeb extends PageFactoryIn
 	public WebElement SelectTemplate;
 	@FindBy(xpath = "//body/app-root[1]/app-layout[1]/main[1]/app-emr-homescreen[1]/div[2]/div[1]/div[1]/div[1]/app-emrtemplateloader[1]/div[3]/div[1]/div[1]/div[1]/div[2]/button[1]")
 	public WebElement OK;
+	
 	@FindBy(xpath = "//div[contains(text(),'Diagnosis and Plan')]")
 	public WebElement DiagnosisAndPlan;
 	@FindBy(xpath = "//div[contains(text(),'A48.4 Brazilian purpuric fever')]")
@@ -68,10 +69,6 @@ public class EMRJuniourSeniourDoctorVerificationYasasiiWeb extends PageFactoryIn
 	public WebElement Reconsile;
 	@FindBy(xpath = "//body/modal-container[1]/div[1]/div[1]/div[3]/button[1]")
 	public WebElement yeS;
-	
-	
-	
-	
 	
 	@FindBy(xpath = "//div[contains(text(),'by Oral')]")
 	public WebElement SelectMedicine;	

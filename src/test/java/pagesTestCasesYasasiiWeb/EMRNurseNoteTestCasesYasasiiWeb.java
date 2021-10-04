@@ -1,6 +1,5 @@
 package pagesTestCasesYasasiiWeb;
 
-import java.awt.AWTException;
 import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
@@ -9,12 +8,12 @@ import org.testng.annotations.Test;
 
 import com.baseYasasiiWeb.TestBaseYasasiiWeb;
 
+import pagesOfYasasiiWeb.EMRBirthRegistrationYasasiiWeb;
 import pagesOfYasasiiWeb.HomePageYasasiiWeb;
-import pagesOfYasasiiWeb.EMRJuniourSeniourDoctorVerificationYasasiiWeb;
 import pagesOfYasasiiWeb.LoginPageYasasiiWeb;
 import pagesOfYasasiiWeb.EMRNurseNoteYasasiiWeb;
 
-public class EMRJuniorSeniorDoctorVerificationTestCasesYW extends TestBaseYasasiiWeb  {
+public class EMRNurseNoteTestCasesYasasiiWeb extends TestBaseYasasiiWeb  {
 	public static LoginPageYasasiiWeb login;
 public static HomePageYasasiiWeb hm;
 
@@ -23,17 +22,18 @@ public static HomePageYasasiiWeb hm;
 public void navigateemradt() throws InterruptedException {
 	
 	this.login =new LoginPageYasasiiWeb(driver) ;
-	this.hm = login.enterloginDetails("jur01", "KK01$#", "KIMSHEALTH TVM");
+	this.hm = login.enterloginDetails("nur01", "KK01$#", "KIMSHEALTH TVM");
 	Thread.sleep(8000);
 	
 }
+
 @Test()
-public void NurseNote() throws InterruptedException, IOException, AWTException
+public void NurseNote() throws InterruptedException, IOException
 {
 	Thread.sleep(5000);
 	
-	EMRJuniourSeniourDoctorVerificationYasasiiWeb junoiur = new EMRJuniourSeniourDoctorVerificationYasasiiWeb(driver);
-	junoiur.JuniourSeniorDoctorAction();
+	EMRNurseNoteYasasiiWeb nurse = new EMRNurseNoteYasasiiWeb(driver);
+	nurse.NurseNoteAction();
 	}
 
 
@@ -41,9 +41,6 @@ public void NurseNote() throws InterruptedException, IOException, AWTException
 public void logout() throws Exception
 {
 	this.hm.clickLogout();
-//	JuniourSeniourDoctorVerificationYasasiiWeb junior = new JuniourSeniourDoctorVerificationYasasiiWeb(driver);
-//	junior.Senoir();
 }
-
 
 }
